@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table ,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="">   <!--no color-->
+            <col span="" style="background-color: yellow;">
+            <col span="">
+            <!-- visibility :collapse is used for providing abstraction for the user  -->
+            <col span="" style="background-color: red;visibility:collapse;"> 
+            <col span="" style="background-color: yellow;">
+
+        
+        </colgroup>
+       <tr>
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting value</td>
+            <td>instructor details</td>
+            
+            <td>After Eating</td>
+            
+       </tr>
+       <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>instructor details</td>
+            <td>2 hours after eating</td>
+        
+        </tr>
+       <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>instructor details</td>
+
+            <td>Less than 140</td>
+       </tr>
+       <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>instructor details</td>
+
+            <td>140 to 200</td>
+       </tr>
+       <tr>
+            <td>Diabetes</td>
+            
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>instructor details</td>
+
+            <td>More than 200</td>
+        </tr>
+        
+    </table>
+    
+    
+</body>
+</html>
