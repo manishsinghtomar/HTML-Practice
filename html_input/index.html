@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Details</title>
+</head>
+<body>
+    <h1> Enter your Details Here</h1>
+    <form action="">
+    <label for="First_name">First Name</label>   
+     <input id="First_name" type="text" name="firstName">
+    <label for="Second_name">Second Name</label>   
+     <input id="Second_name" type="text" name="secondName">
+     <br><br>
+
+    <label for="Age">Age</label>   
+     <input id="Age" type="number" name="age">
+     <br><br>
+    <label for="email">Email</label>   
+     <input id="email" type="email" value="email">
+
+    <label for="password">Password</label>
+     <input id="password" type="password">
+    <br><br>  
+    <!-- input command kar do password dekhne k liye inspect me  -->
+     
+    <label for="dob">Date Of Birth</label>   
+     <input id="dob" type="date">
+
+     <p>Enter the TShirt Size</p>
+     <!-- input me same name dalne se choose one option enable hota hai  -->
+      <!-- label for and input id same hone se hum label k though input par toggle kar sakte hai  -->
+     <input id="Small" type="radio" name="TshirtSize" value="Small">
+     <label for="Small" >Small</label>
+     <br>
+     <input id="Medium" type="radio" name="TshirtSize" value="Medium">
+     <label for="Medium" >Medium</label>
+     <br>
+     <input id="Large" type="radio" name="TshirtSize" value="Larger">
+     <label for="Large">Large</label>
+     <br><br>
+     <label for="color">color</label>
+     <input id="color" type="color">
+     <br><br>
+
+     <!-- The <> element defines a drop-down list -->
+     <label for="cars">Choose a car:</label>
+     <select name="cars" id="cars">
+         <!-- select>option*4 -->
+        <option value="volvo">Volve<option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+     </select>
+     <br><br>
+
+     <label for="aboutYourself">Tell me about Yourself</label>
+     <textarea name="aboutYourself" id="aboutYourself" cols="30" rows="10"></textarea>
+     <br><br>
+
+     <input type="reset">
+     <input type="submit">
+
+    </form>
+</body>
+</html>
